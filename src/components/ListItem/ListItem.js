@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Item } from './ListItem.styled';
 
-export const ListItem = ({ id, name, number, onDeletedContact }) => {
+export function ListItem({ id, name, number, onDeletedContact }) {
   return (
     <Item>
       {name}: {number}
@@ -15,7 +15,7 @@ export const ListItem = ({ id, name, number, onDeletedContact }) => {
       </button>
     </Item>
   );
-};
+}
 
 ListItem.propTypes = {
   id: PropTypes.string.isRequired,
